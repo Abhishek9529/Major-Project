@@ -1,0 +1,110 @@
+body{
+     font-family: "Poppins", sans-serif !important;
+}
+.navbar{
+    height: 5rem ;
+    background-color: white;
+}
+
+.fa-regular{
+    color: red;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color: #222222 !important;
+}
+
+/* footer */
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover{
+ text-decoration: underline;
+}
+
+.f-info{
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-info-links{
+    width: 100%;
+}
+
+.f-info-socials{
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+/* card */
+.card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.listing-link{
+    text-decoration: none;
+    color: #222222;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100%;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text p{
+    font-weight: 400 !important;
+}
+
+/* card overlay */
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* new listing */
+form{
+    width: "100%";
+}
+
+.new-btn{
+    background-color: rgb(255, 54, 54) !important;
+    border: none !important;
+}
+
+/* edit form */
+.edit-btn{
+    background-color: rgb(255, 54, 54) !important;
+    border: none !important;
+    color: white !important;
+}
+
+/* show image */
+.show-img{
+    height: 40vh;
+}
+
+.btns{
+    gap: 20px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+

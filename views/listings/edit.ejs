@@ -1,0 +1,57 @@
+<% layout("/layouts/boilerplate.ejs") %>
+
+    <body>
+        <h3>Edit form</h3>
+        <form action="/listings/<%= listing._id %>/?_method=PUT" method="POST">
+            <div class="mb-3">
+                <label for="title" class="form-label">
+                    Title
+                    <input class="form-control" id="title" type="text" value="<%= listing.title %>" name="listing[title]">
+                </label>
+            </div>
+            <br>
+           
+            <div class="mb-3">
+                <label for="description" class="form-label">
+                    Description
+                    <textarea class="form-control" id="description" type="text" name="listing[description]"> <%= listing.description %></textarea>
+                </label>
+            </div>
+            <br>
+        
+            <div class="mb-3">
+                <label for="price" class="form-label">
+                    Price
+                    <input class="form-control" id="price" type="number" value="<%= listing.price %>" name="listing[price]">
+                </label>
+            </div>
+            <br>
+           
+            <div class="mb-3">
+                <label for="imgUrl" class="form-label">
+                    Image Url
+                    <input class="form-control" id="imgUrl" type="text" value="<%= listing.image.url %>" name="listing[image]">
+                </label>
+            </div>
+            <br>
+           
+            <div class="mb-3">
+                <label for="location" class="form-label">
+                    Location
+                    <input class="form-control" id="location" type="text" value="<%= listing.location %>" name="listing[location]">
+                </label>
+            </div>
+            <br>
+            
+            <div class="mb-3">
+                    <label for="country" class="form-label">
+                        Country
+                        <input class="form-control" id="country" type="text" value="<%= listing.country %>" name="listing[country]">
+                    </label>
+                </div>
+            <br>
+            <button class="edit-btn btn">Edit</button>
+        </form>
+    </body>
+
+    </html>

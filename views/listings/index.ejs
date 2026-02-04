@@ -1,0 +1,28 @@
+<% layout("/layouts/boilerplate.ejs") %>
+
+    <body>
+        <h3>All Listings</h3>
+        <div class="row justify-content-evenly ">
+            <% for(listing of allListing) { %>
+
+                <div class="card" style="width: 18rem;">
+                    <a href="/listings/<%= listing._id %>" class="listing-link">
+                        <img src="<%= listing.image.url %>" style="height: 20rem" class="card-img-top" alt="...">
+                        <div class="card-img-overlay"> </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                <b>
+                                    <%= listing.title %>
+                                </b> <br>
+                                <%= listing.price %> <br>
+                                    Price: &#8377; <%= listing.price.toLocaleString("en-IN") %> / night
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <% } %>
+        </div>
+
+
+    </body>
