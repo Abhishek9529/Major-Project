@@ -2,11 +2,11 @@
     <div class="row">
         <div class="col-8 offset-2">
             <h3>Create new listing</h3>
-            <form action="/listings" method="POST" >
+            <form action="/listings" method="POST" novalidate class="needs-validation">
                 <div class="mb-3">
                     <label for="title" class="form-label">
                         Title
-                        <input class="form-control" id="title" type="text" placeholder="title" name="listing[title]">
+                        <input class="form-control" id="title" type="text" placeholder="title" name="listing[title]" required>
                     </label>
                 </div>
 
@@ -14,14 +14,14 @@
                     <label for="description" class="form-label">
                         Description
                         <textarea class="form-control" id="description" type="text" placeholder="description"
-                            name="listing[description]"> Enter description here</textarea>
+                            name="listing[description]" required> Enter description here</textarea>
                     </label>
                 </div>
 
                 <div class="mb-3">
                     <label for="price" class="form-label">
                         Price
-                        <input class="form-control" id="price" type="number" placeholder="price" name="listing[price]">
+                        <input class="form-control" id="price" type="number" placeholder="price" name="listing[price]" required>
                     </label>
                 </div>
                 <div class="mb-3">
@@ -34,14 +34,14 @@
                     <label for="location" class="form-label">
                         Location
                         <input class="form-control" id="location" type="text" placeholder="location"
-                            name="listing[location]">
+                            name="listing[location]" required>
                     </label>
                 </div>
                 <div class="mb-3">
                     <label for="country" class="form-label">
                         Country
                         <input class="form-control" id="country" type="text" placeholder="country"
-                            name="listing[country]">
+                            name="listing[country]" required>
                     </label>
                 </div>
                 <button class="btn btn-dark new-btn">Submit</button>
